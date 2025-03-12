@@ -93,7 +93,7 @@ export async function POST(req: Request) {
                         
                         <p>We'll be sending you more information about the event schedule, themes, and resources in the coming days.</p>
                         
-                        <p>If you have any questions or need assistance, please don't hesitate to contact us at <a href="mailto:vyuha.kl@gmail.com">vyuha.kl@gmail.com</a>.</p>
+                        <p>If you have any questions or need assistance, please don't hesitate to contact us at <a href="mailto:info@vyhack.tech">info@vyhack.tech</a>.</p>
                         
                         <a href="https://vyhack.tech" class="button">Visit Hackathon Portal</a>
                         
