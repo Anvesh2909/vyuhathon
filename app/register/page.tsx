@@ -3,6 +3,7 @@ import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { supabase } from "@/lib/supabase";
 import Link from 'next/link';
 import axios from 'axios';
+
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
         name: '',
@@ -21,7 +22,6 @@ const RegistrationForm = () => {
         });
     };
 
-
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setLoading(true);
@@ -33,6 +33,18 @@ const RegistrationForm = () => {
             if (!formData.name.trim() || !formData.email.trim() || !formData.universityId.trim() || !formData.teamName.trim()) {
                 throw new Error("All fields are required");
             }
+
+            // Check if email already exists
+            const { data: existingEmail, error: emailError } = await supabase
+                .from('registrations')
+                .select('email')
+                .eq('email', formData.email)
+                .single();
+
+            if (emailError && emailError.code !== 'PGRST116') throw emailError;
+            if (existingEmail) throw new Error("Email already exists");
+
+            // Insert new registration
             const { data, error } = await supabase
                 .from('registrations')
                 .insert([
@@ -202,4 +214,5 @@ const RegistrationForm = () => {
         </div>
     );
 };
+
 export default RegistrationForm;
