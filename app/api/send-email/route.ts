@@ -103,7 +103,7 @@ export async function POST(req: Request) {
                     </div>
                     <div class="footer">
                         <p>This email was sent to ${email}. If you did not register for this event, please disregard this email.</p>
-                        <p>&copy; 2024 Vyuhathon. All rights reserved.</p>
+                        <p>&copy; 2025 Vyuhathon. All rights reserved.</p>
                     </div>
                 </div>
             </body>
