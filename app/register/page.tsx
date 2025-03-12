@@ -209,7 +209,7 @@ const RegistrationForm = () => {
 
             <div className="mt-8 text-gray-600 flex items-center justify-center">
                 <span>For any assistance, contact us at </span>
-                <a href="mailto:vyuha.kl@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors ml-1">vyuha.kl@gmail.com</a>
+                <a href="mailto:info@vyhack.tech" className="text-blue-600 hover:text-blue-800 transition-colors ml-1">info@vyhack.tech</a>
             </div>
         </div>
     );

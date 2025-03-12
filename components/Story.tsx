@@ -16,7 +16,12 @@ const Story = () => {
                     </div>
                     <div className="max-w-5xl mx-auto">
                         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-                            <div className="text-center md:text-left md:w-1/2">
+                            <div className="order-2 md:order-1 md:w-1/2 flex justify-center md:justify-start">
+                                <div className="bg-white bg-opacity-10 rounded-2xl p-4 backdrop-blur-sm">
+                                    <Lottie animationData={StoryAnimation} className="w-72 md:w-80 lg:w-96" />
+                                </div>
+                            </div>
+                            <div className="order-1 md:order-2 text-center md:text-left md:w-1/2">
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                                     💡 Your Journey: From Idea to Reality
                                 </h2>
@@ -31,11 +36,6 @@ const Story = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                                         </svg>
                                     </a>
-                                </div>
-                            </div>
-                            <div className="md:w-1/2 flex justify-center md:justify-end">
-                                <div className="bg-white bg-opacity-10 rounded-2xl p-4 backdrop-blur-sm">
-                                    <Lottie animationData={StoryAnimation} className="w-72 md:w-80 lg:w-96" />
                                 </div>
                             </div>
                         </div>

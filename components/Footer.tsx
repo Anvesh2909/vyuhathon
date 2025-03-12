@@ -64,7 +64,7 @@ const Footer = () => {
                         <div className="space-y-3">
                             <div className="flex items-center justify-center md:justify-start">
                                 <EnvelopeIcon className="w-5 h-5 text-blue-400 mr-2" />
-                                <a href="mailto:vyuha.kl@gmail.com" className="text-blue-400 hover:text-white transition-colors">vyuha.kl@gmail.com</a>
+                                <a href="mailto:info@vyhack.tech" className="text-blue-400 hover:text-white transition-colors">info@vyhack.tech</a>
                             </div>
                             <div className="flex items-center justify-center md:justify-start">
                                 <svg className="w-5 h-5 text-blue-400 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">

@@ -8,7 +8,6 @@ const About = () => {
     return (
         <section className="py-16 md:py-24 px-4 md:px-6 relative overflow-hidden ">
             <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-
             <div className="container mx-auto">
                 <div className="bg-white rounded-3xl shadow-lg p-8 md:p-12 relative border border-blue-100">
                     <div className="absolute top-0 left-0 w-32 h-32 bg-blue-100 rounded-full -translate-x-1/2 -translate-y-1/2 opacity-40"></div>
@@ -20,13 +19,13 @@ const About = () => {
                         </h2>
 
                         <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-                            <div className="order-2 md:order-1 md:w-1/2 flex justify-center md:justify-start">
+                            <div className="order-2 md:order-2 md:w-1/2 flex justify-center md:justify-end">
                                 <div className="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-5 shadow-lg transform rotate-1">
                                     <Lottie animationData={AboutAnimation} className="w-72 md:w-80 lg:w-96" />
                                 </div>
                             </div>
 
-                            <div className="order-1 md:order-2 text-center md:text-left md:w-1/2">
+                            <div className="order-1 md:order-1 text-center md:text-left md:w-1/2">
                                 <div className="space-y-6">
                                     <div>
                                         <h3 className="inline-block text-2xl md:text-3xl font-bold mb-2 text-blue-700 border-b-2 border-blue-400 pb-1">

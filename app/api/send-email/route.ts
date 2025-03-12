@@ -56,7 +56,7 @@ export async function POST(req: Request) {
                     }
                     .button {
                         background-color: #3b82f6;
-                        color: white;
+                        color: black;
                         padding: 10px 20px;
                         text-decoration: none;
                         border-radius: 5px;
