@@ -6,7 +6,8 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
     title: 'Vyuhathon',
-    description: 'Vyuha Hackathon'
+    description: 'Vyuha Hackathon',
+    icons: '/logo.png',
 };
 
 export default function Layout({ children }: { children: ReactNode }) {
