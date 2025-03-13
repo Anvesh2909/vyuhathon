@@ -14,7 +14,6 @@ export async function POST(req: Request) {
                 pass: process.env.EMAIL_PASS!,
             },
         });
-
         const mailOptions = {
             from: `"Vyuhathon" <${process.env.EMAIL_USER}>`,
             to: email,

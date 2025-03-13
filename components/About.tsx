@@ -3,6 +3,7 @@ import React from 'react'
 import dynamic from "next/dynamic";
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false })
 import AboutAnimation from "@/public/lotties/Animation-about.json"
+import Link from "next/link";
 
 const About = () => {
     return (
@@ -49,12 +50,12 @@ const About = () => {
                                     </div>
 
                                     <div className="flex flex-wrap justify-center md:justify-start gap-4 pt-2">
-                                        <a href="" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-md">
+                                        <Link href="https://t.me/vyuha_club" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-medium hover:from-blue-700 hover:to-blue-800 transition-all shadow-md">
                                             Join Our Community
                                             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                                             </svg>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
