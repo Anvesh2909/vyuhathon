@@ -84,7 +84,7 @@ export async function POST(req: Request) {
                         <div class="timeline">
                             <strong>Key Dates:</strong>
                             <ul>
-                                <li>Registration Deadline: March 16, 8:00 AM</li>
+                                <li>Registration Deadline: TBD</li>
                                 <li>Team Formation Deadline: TBD</li>
                                 <li>Hackathon Kick-off: TBD</li>
                             </ul>

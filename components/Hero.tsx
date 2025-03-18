@@ -1,9 +1,8 @@
 "use client"
 import React from 'react'
-import dynamic from 'next/dynamic'
 import HeroAnimation from "@/public/lotties/Animation-hero.json"
 import Link from 'next/link'
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false })
+import LottieAnimation from '@/components/LottieAnimation'
 
 const Hero = () => {
     return (
@@ -25,17 +24,16 @@ const Hero = () => {
                     <div className="flex items-center justify-center md:justify-start">
                         <div className="flex items-center space-x-3 bg-white px-5 py-2.5 rounded-full shadow-sm">
                             <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
-                            <p className="text-sm font-medium text-gray-700">Registration Open Until March 16, 8:00 AM</p>
+                            <p className="text-sm font-medium text-gray-700">Registrations Open</p>
                         </div>
                     </div>
                 </div>
 
                 <div className="md:flex-1 flex justify-center md:justify-end mt-6 md:mt-0">
                     <div className="bg-white bg-opacity-70 rounded-full p-4 sm:p-6 w-full max-w-xs sm:max-w-sm md:max-w-lg aspect-square flex items-center justify-center shadow-lg">
-                        <Lottie
+                        <LottieAnimation
                             animationData={HeroAnimation}
                             className="w-full h-full"
-                            loop={true}
                         />
                     </div>
                 </div>

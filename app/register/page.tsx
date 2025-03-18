@@ -200,7 +200,7 @@ const RegistrationForm = () => {
                 <div className="mt-6 text-sm text-gray-600">
                     <div className="flex items-center space-x-3 bg-white px-5 py-2.5 rounded-full shadow-sm my-4">
                         <div className="w-3 h-3 rounded-full bg-blue-500 animate-pulse"></div>
-                        <p className="text-sm font-medium text-gray-700">Registration Open Until March 16, 8:00 AM</p>
+                        <p className="text-sm font-medium text-gray-700">Registrations Open</p>
                     </div>
 
                     By clicking "Register Now", you agree to our <Link href="/terms" className="text-blue-600 hover:text-blue-800 transition-colors">Terms and Conditions</Link> and acknowledge that your information will be used in accordance with Vyuhathon's <Link href="/privacy" className="text-blue-600 hover:text-blue-800 transition-colors">Privacy Policy</Link>.

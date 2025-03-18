@@ -3,7 +3,7 @@ import { ReactNode } from 'react';
 import { Metadata } from "next";
 import Navbar from '@/components/Navbar';
 import Footer from "@/components/Footer";
-
+import { Analytics } from "@vercel/analytics/react"
 export const metadata: Metadata = {
     title: 'Vyuhathon',
     description: 'Vyuha Hackathon',
@@ -24,6 +24,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </div>
             <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-15 sm:pt-10 lg:px-8 pt-10 md:pt-2">
                 {children}
+                <Analytics/>
             </main>
             <Footer/>
         </div>
